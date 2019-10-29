@@ -1,5 +1,5 @@
-$primary: #7c93ff;
-$secondary: #222222;
+$primary: #60bfd9;
+$secondary: #191a24;
 $body-bg:#fff;
 $table-dark-color: #fff;
 $table-dark-bg: $secondary;
@@ -21,6 +21,13 @@ header{
 footer{
   background-color: $secondary;
   color: $primary;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+h1{
+  color: $secondary;
 }
 #page{
     min-height:100vh; /* 1 */
@@ -84,16 +91,16 @@ footer .link-block i {
   margin-bottom: 5px;
 }
 footer .link-block li:not(:first-child) a{
-  border-left: 1px solid #000;
+  border-left: 1px solid lighten($secondary,5%);
 }
 footer .link-block li:not(:last-child) a{
-  border-right: 1px solid darken(#fff,50%);
+  border-right: 1px solid darken($secondary,5%);
 }
 
 thead{
   color: $primary;
 }
-table{
+.table{
   text-align: center;
-  margin-bottom: 150px;
+  margin-bottom: 10rem;
 }
